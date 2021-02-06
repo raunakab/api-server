@@ -34,8 +34,7 @@ async fn main() -> std::io::Result<()> {
         return App::new()
             .route("/", web::get()  .to(hello_world));
     })
-    // .bind("34.210.113.149")?
-    .bind("127.0.0.1:8080")?
+    .bind("<FILL THIS OUT LATER>")?
     .run()
     .await;
 }
