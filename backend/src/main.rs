@@ -34,7 +34,7 @@ async fn main() -> std::io::Result<()> {
         return App::new()
             .route("/", web::get()  .to(hello_world));
     })
-    .bind("<FILL THIS OUT LATER>")?
+    .bind("0.0.0.0:8080")?
     .run()
     .await;
 }
