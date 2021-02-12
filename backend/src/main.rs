@@ -35,7 +35,8 @@ pub async fn hello_world() -> Result<HttpResponse, Error> {
 async fn main() -> std::io::Result<()> {
     return HttpServer::new(move || {
         return App::new()
-            .route("/", web::get()  .to(hello_world));
+            .route("/", web::get()          .to(hello_world))
+            .route("/grasps/", web::get()   .to(hello_world));
     })
     .bind("0.0.0.0:8080")?
     .run()
