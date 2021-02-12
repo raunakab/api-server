@@ -1,5 +1,8 @@
 #![allow(unused)]
 
+extern crate actix;
+extern crate diesel;
+
 use actix_web::{
     web,
     App,

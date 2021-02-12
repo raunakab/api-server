@@ -1,2 +1,3 @@
 /backend/target
 /backend/Cargo.lock
+/db/data
